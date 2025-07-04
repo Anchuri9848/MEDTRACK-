@@ -10,6 +10,7 @@ dynamodb = boto3.resource('dynamodb', region_name='us-east-1')  # Change region 
 users_table = dynamodb.Table('users')
 
 # ---------- Email (SMTP) Configuration ----------
+arn:aws:sns:us-east-1:976193227152:Medtrack:297d8edc-fa84-4b62-8c9d-56536f762853
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
